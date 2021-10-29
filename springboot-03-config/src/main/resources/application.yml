@@ -1,0 +1,35 @@
+person:
+  last-name: zhang${random.value}
+  age: 12
+  boss: false
+  birth-date: 2021/10/25
+  maps:
+    k1: v1
+    k2: v2
+  lists:
+    -lisi
+    -wangwu
+  dog:
+    name: ${person.hello}小狗
+    age: 23
+server:
+  port: 8080
+  servlet:
+    context-path: /boot02
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 1000
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+server:
+  port: 2000
+spring:
+  config:
+    activate:
+      on-profile: prod

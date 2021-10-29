@@ -1,0 +1,8 @@
+#\u5F00\u542Fspringboot\u7684debug
+server:
+  port: 8080
+  servlet:
+    encoding:
+      enabled: true
+      charset: utf-8
+debug: true
