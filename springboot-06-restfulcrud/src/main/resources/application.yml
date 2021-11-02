@@ -3,4 +3,14 @@ spring:
     basename: i18n.login
   thymeleaf:
     cache: false
-
+  mvc:
+    format:
+      date: yyyy-MM-dd
+    ##配置Filter
+    hiddenmethod:
+      filter:
+        enabled: true
+server:
+  error:
+    include-exception: true
+    include-message: always
